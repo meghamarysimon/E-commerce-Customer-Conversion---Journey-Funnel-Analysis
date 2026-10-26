@@ -17,7 +17,7 @@ The analysis explores customer journeys from product discovery to purchase, alon
 - **Python:** Data cleaning, exploratory data analysis, and visualization.
 - **SQL:** Data querying and business analysis.
 - **Power BI:** Interactive dashboards and reporting.
-- **Tableau:** Data visualization and analytical reporting.
+  
 
 ## Project Structure
 - `01_Raw_Data/` – Raw e-commerce datasets.
