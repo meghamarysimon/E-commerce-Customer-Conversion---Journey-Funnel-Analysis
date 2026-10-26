@@ -1,0 +1,7 @@
+funnel_stage,sessions,conversion_from_previous_percent,drop_off_sessions,drop_off_percent
+visit,12000,100.0,0,0.0
+product_view,8852,73.77,3148,26.23
+add_to_cart,4545,51.34,4307,48.66
+checkout,2577,56.7,1968,43.3
+payment,1909,74.08,668,25.92
+purchase,1750,91.67,159,8.33

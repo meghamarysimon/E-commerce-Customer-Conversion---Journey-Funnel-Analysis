@@ -1,0 +1,51 @@
+check,status
+Customer IDs unique,PASS
+Product IDs unique,PASS
+Session IDs unique,PASS
+Event IDs unique,PASS
+Order IDs unique,PASS
+Order item IDs unique,PASS
+Session customer FKs valid,PASS
+Event session FKs valid,PASS
+Event customer FKs valid,PASS
+Event product FKs valid,PASS
+Order session FKs valid,PASS
+Order customer FKs valid,PASS
+Order item order FKs valid,PASS
+Order item product FKs valid,PASS
+All session dates in 2025,PASS
+All order dates in 2025,PASS
+All event dates in 2025,PASS
+Customers: customer_id complete,PASS
+Customers: signup_date complete,PASS
+Customers: age_group complete,PASS
+Customers: region complete,PASS
+Customers: country complete,PASS
+Sessions: session_id complete,PASS
+Sessions: customer_id complete,PASS
+Sessions: session_start complete,PASS
+Sessions: device_type complete,PASS
+Sessions: traffic_source complete,PASS
+Sessions: campaign complete,PASS
+Sessions: region complete,PASS
+Sessions: session_duration_sec complete,PASS
+Sessions: pages_viewed complete,PASS
+Sessions: visitor_type complete,PASS
+Events: event_id complete,PASS
+Events: session_id complete,PASS
+Events: customer_id complete,PASS
+Events: product_id complete,PASS
+Events: event_ts complete,PASS
+Events: event_type complete,PASS
+Orders: order_id complete,PASS
+Orders: session_id complete,PASS
+Orders: customer_id complete,PASS
+Orders: order_date complete,PASS
+Orders: payment_method complete,PASS
+Orders: order_total complete,PASS
+Orders: order_status complete,PASS
+Orders: net_revenue complete,PASS
+Event stages are sequential within sessions,PASS
+Every purchase event has a matching order,PASS
+Customer first purchase dates match earliest completed orders,PASS
+No-purchase customers have blank first_purchase_date,PASS

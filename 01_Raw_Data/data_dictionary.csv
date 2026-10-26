@@ -1,0 +1,48 @@
+table,column,meaning,use
+customers.csv,customer_id,Unique customer identifier,Primary key
+customers.csv,signup_date,Customer registration date,Customer profile
+customers.csv,age_group,Customer age band,Customer segmentation
+customers.csv,region,Customer region,Geographic analysis
+customers.csv,country,Customer country,Geographic analysis
+customers.csv,first_purchase_date,Earliest completed purchase date; blank for customers with no completed purchase,Customer lifecycle
+customers.csv,purchase_status,Purchased or Never Purchased,Customer segmentation
+products.csv,product_id,Unique product identifier,Primary key
+products.csv,product_name,Product name,Product analysis
+products.csv,product_category,Product category,Category analysis
+products.csv,brand,Brand,Product analysis
+products.csv,unit_price,Base product price,Product analysis
+products.csv,rating,Average product rating,Product context
+products.csv,stock_quantity,Available stock quantity,Inventory context
+sessions.csv,session_id,Unique session identifier,Primary key
+sessions.csv,customer_id,Customer associated with the session,FK to customers
+sessions.csv,session_start,Session start timestamp in 2025,Time analysis
+sessions.csv,device_type,"Mobile, Desktop or Tablet",Journey segmentation
+sessions.csv,traffic_source,Acquisition source,Journey segmentation
+sessions.csv,campaign,Marketing campaign,Campaign analysis
+sessions.csv,region,Session region,Geographic analysis
+sessions.csv,session_duration_sec,Session duration in seconds,Engagement analysis
+sessions.csv,pages_viewed,Pages viewed during session,Engagement analysis
+sessions.csv,first_purchase_date,Customer's first completed purchase date,Lifecycle context
+sessions.csv,visitor_type,New or Returning based on prior completed purchase,Journey analysis
+events.csv,event_id,Unique event identifier,Primary key
+events.csv,session_id,Session containing the event,FK to sessions
+events.csv,customer_id,Customer performing the event,FK to customers
+events.csv,product_id,Product associated with the event,FK to products
+events.csv,event_ts,Event timestamp,Journey ordering
+events.csv,event_type,"visit, product_view, add_to_cart, checkout, payment or purchase",Funnel stage
+orders.csv,order_id,Unique order identifier,Primary key
+orders.csv,session_id,Session that produced the order,FK to sessions
+orders.csv,customer_id,Customer placing the order,FK to customers
+orders.csv,order_date,Order date in 2025,Revenue trends
+orders.csv,payment_method,"UPI, cards, net banking, COD or digital wallet",Payment analysis
+orders.csv,discount_amount,Discount amount applied,Promotion analysis
+orders.csv,shipping_cost,Shipping cost charged,Order economics
+orders.csv,order_total,Customer-facing order value,Order value
+orders.csv,order_status,"Completed, Cancelled or Refunded",Order outcome
+orders.csv,net_revenue,Revenue recognized from completed orders; zero for cancelled/refunded orders,Revenue KPI
+order_items.csv,order_item_id,Unique order-line identifier,Primary key
+order_items.csv,order_id,Order containing the item,FK to orders
+order_items.csv,product_id,Product purchased,FK to products
+order_items.csv,quantity,Units purchased,Sales analysis
+order_items.csv,unit_price,Product price at order time,Sales analysis
+order_items.csv,line_total,Quantity multiplied by unit price,Sales analysis
